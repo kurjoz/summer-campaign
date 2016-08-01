@@ -1,0 +1,52 @@
+.signup-form-canvas {
+  margin: 0 auto;
+  padding: 25px 40px;
+  max-width: 600px;
+  background-color: #fafbfd;
+  border-radius: 3px;
+}
+body {
+  padding-top: 50px;
+}
+.slide {
+  height: 640px;
+  color: #fff;
+}
+.slide.slide-top {
+  background-color: #79d1f7;
+  background-image: url('../im/slide-top-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100%;
+}
+.slide.slide-payments {
+  background: #fdaf1b;
+}
+.slide.slide-advantages {
+  background-color: #79d1f7;
+}
+.slide.slide-registration {
+  background-color: #ffc80b;
+}
+.slide .btn {
+  text-transform: uppercase;
+}
+.slide .form {
+  color: #a0a3a8;
+  font-weight: normal;
+}
+.slide .form .control-label {
+  font-weight: normal;
+}
+footer {
+  padding: 65px 0;
+  background-color: #f9f9fb;
+}
+footer .footer-links > a {
+  margin: 0 0 0 20px;
+  float: left;
+  text-transform: uppercase;
+  color: #adadad;
+  line-height: 34px;
+}
+/*# sourceMappingURL=main.css.map */
