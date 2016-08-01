@@ -1,0 +1,36 @@
+body{
+    padding-top: 50px;
+}
+
+.slide{
+    height: @slide-height;
+    color: #fff;
+    &.slide-top{
+        background-color: @color-blue;
+        background-image: url('../im/slide-top-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 100%;
+    }
+    &.slide-payments{
+        background: @color-orange;
+    }
+    &.slide-advantages{
+        background-color: @color-blue;
+    }
+    &.slide-registration{
+        background-color: @color-yellow;
+    }
+    .btn{
+        text-transform: uppercase;
+    }
+    .form{
+        color: #a0a3a8;
+        font-weight: normal;
+
+        .control-label{
+            font-weight: normal;
+        }
+    }
+
+}
