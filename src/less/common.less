@@ -1,0 +1,117 @@
+body{
+    padding-top: @navbar-height;
+}
+.navbar-default .navbar-nav > li > a{
+    text-transform: uppercase;
+    color: @color-nav-link;
+}
+
+.slide-box{
+    padding: @slide-padding 0;
+    height: @slide-height;
+    color: #fff;
+    position: relative;
+    .slide-header{
+        margin: 0 0 40px;
+        >.slide-header-lvl1{
+            font-size: 75px;
+            line-height: 1.125;
+            font-weight: 600;
+            > small{
+                font-size: 75px/1.25;
+            }
+        }
+        > .slide-header-lvl2{
+
+        }
+        .slide-header-lvl3{
+            font-size: 39px;
+            line-height: 1;
+        }
+        .btn{
+            font-size: 22px;
+        }
+    }
+    &.slide-top{
+        background-color: @color-blue;
+
+        .controll.mouse{
+            position: absolute;
+            bottom: 28px;
+            left: 50%;
+            margin-left: -@controll-icon-size/2;
+        }
+        &:before{
+            width: @slide-bg-width;
+            height: 509px;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -@slide-bg-width/2;
+            background-image: url('../im/slide-top-bg.jpg');
+            background-repeat: no-repeat;
+            background-position: right bottom;
+        }
+    }
+    &.slide-payments{
+        background: @color-orange;
+        text-align: center;
+        height: 770px;
+
+        &:before{
+            width: 100%;
+            height: 412px;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url('../im/slide-payments-top-bg.jpg');
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+
+        &:after{
+            width: 100%;
+            height: 595px;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-image: url('../im/slide-payments-bottom-bg.jpg');
+            background-repeat: no-repeat;
+            background-position: left bottom;
+        }
+    }
+    &.slide-advantages{
+        padding: 0;
+        background-color: @color-blue;
+
+        .carousel{
+            height: 100%;
+
+            .carousel-inner{
+                height: 100%;
+
+                >.item{
+                    height: 100%;
+                }
+            }
+        }
+    }
+    &.slide-registration{
+        background-color: @color-yellow;
+    }
+    .btn{
+        text-transform: uppercase;
+    }
+    .form{
+        color: #a0a3a8;
+        font-weight: normal;
+
+        .control-label{
+            font-weight: normal;
+        }
+    }
+
+}

@@ -1,0 +1,41 @@
+.controll{
+    width: @controll-icon-size;
+    height: @controll-icon-size;
+    background: @color-icon none center no-repeat;
+    display: block;
+    border-radius: 50%;
+    &:hover{
+        background-color: @color-icon-active;
+    }
+
+    &.mouse{
+        background-image: url("../im/ico-mouse.png");
+    }
+
+    &.browse{
+        background-image: url("../im/ico-arrows.png");
+        &.left{
+            background-position: 0 0;
+        }
+        &.right{
+            background-position: -@controll-icon-size 0;
+        }
+    }
+}
+.controll.browse.left{
+    left: 50%;
+    margin-left:-@slide-bg-width/2;
+    top: 50%;
+    margin-top: -@controll-icon-size;
+}
+.controll.browse.right{
+    right: 50%;
+    margin-right:-@slide-bg-width/2;
+    top: 50%;
+    margin-top: -@controll-icon-size;
+}
+/*.carousel-inner .container{
+    height: 400px;
+    background: #ff0000;
+}*/
+//debug

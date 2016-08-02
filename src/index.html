@@ -8,8 +8,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Portmone.com</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -54,41 +55,82 @@
     </div><!-- /.container-fluid -->
 </nav>
 <div class="page-container">
-    <section class="slide slide-top">
+    <section class="slide-box slide-top">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <header class="slide-header">
-                        <h4>вирушайте у відпустку а рахунки довірте</h4>
-                        <h1>portmone.com</h1>
-                    </header>
+                    <div class="slide-header">
+                        <div class="slide-header-lvl3">вирушайте у відпустку</div>
+                        <div class="slide-header-lvl1">
+                            а рахунки <br>довірте <br>
+                            <img src="im/logo-lg.png" alt="portmone.com" />
+                        </div>
+                    </div>
                     <a href="#" class="btn btn-default">сплатити</a>
                 </div>
             </div>
         </div>
+        <a href="#" class="controll mouse"></a>
     </section>
-    <section class="slide slide-payments">
+    <section class="slide-box slide-payments">
         <div class="container">
             <div class="row">
-                <header class="slide-header">
-                    <h1>Сплачуйте онлайн</h1>
-                    <h4>Швидко та без черг</h4>
-                </header>
-                <a href="#" class="btn btn-default">сплатити</a>
+                <div class="slide-header">
+                    <div class="slide-header-lvl1">
+                        <small>сплачуйте <br></small>
+                        онлайн
+                    </div>
+                    <div class="slide-header-lvl3">де б ви не були</div>
+                </div>
+                <div class="stickers">
+                    <img src="im/stickers.png" alt="" />
+                </div>
             </div>
         </div>
     </section>
-    <section class="slide slide-advantages">
-        <div class="container">
+    <section class="slide-box slide-advantages">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active left">
+                    <div class="container">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item next left">
+                    <div class="container">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container">
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control controll browse left " href="#myCarousel" role="button" data-slide="prev">
+            </a>
+            <a class="right carousel-control controll browse right" href="#myCarousel" role="button" data-slide="next">
+            </a>
+        </div>
+        <!--<div class="container">
             <div class="row">
                 <header class="slide-header">
                     <h1>Зручно</h1>
                     <h4>Створюйте шаблони платежів, додавайте картки, налаштовуйте автоплатіж для оплати  у два кліки</h4>
                 </header>
             </div>
-        </div>
+        </div>-->
     </section>
-    <section class="slide slide-registration">
+    <section class="slide-box slide-registration">
         <div class="container">
             <div class="row">
                 <header class="slide-header">
