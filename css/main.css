@@ -1,3 +1,141 @@
+.btn {
+  text-transform: uppercase;
+  padding: 12px 45px;
+  font-size: 22px;
+  line-height: 1.36363636;
+  border-radius: 27px;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #f84145;
+  border-color: #f84145;
+}
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 19px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-xs {
+  padding: 1px 5px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+body {
+  padding-top: 60px;
+}
+.navbar-default .navbar-nav > li > a {
+  text-transform: uppercase;
+  color: #30b1ea;
+}
+.slide-box {
+  padding: 65px 0;
+  height: 640px;
+  color: #fff;
+  position: relative;
+}
+.slide-box .slide-header {
+  margin: 0 0 40px;
+}
+.slide-box .slide-header > .slide-header-lvl1 {
+  font-size: 75px;
+  line-height: 1.125;
+  font-weight: 600;
+}
+.slide-box .slide-header > .slide-header-lvl1 > small {
+  font-size: 60px;
+}
+.slide-box .slide-header .slide-header-lvl3 {
+  font-size: 39px;
+  line-height: 1;
+}
+.slide-box .slide-header .btn {
+  font-size: 22px;
+}
+.slide-box.slide-top {
+  background-color: #79d1f7;
+}
+.slide-box.slide-top .controll.mouse {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  margin-left: -33px;
+}
+.slide-box.slide-top:before {
+  width: 1140px;
+  height: 509px;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -570px;
+  background-image: url('../im/slide-top-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.slide-box.slide-payments {
+  background: #fdaf1b;
+  text-align: center;
+  height: 770px;
+}
+.slide-box.slide-payments:before {
+  width: 100%;
+  height: 412px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../im/slide-payments-top-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.slide-box.slide-payments:after {
+  width: 100%;
+  height: 595px;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url('../im/slide-payments-bottom-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.slide-box.slide-advantages {
+  padding: 0;
+  background-color: #79d1f7;
+}
+.slide-box.slide-advantages .carousel {
+  height: 100%;
+}
+.slide-box.slide-advantages .carousel .carousel-inner {
+  height: 100%;
+}
+.slide-box.slide-advantages .carousel .carousel-inner > .item {
+  height: 100%;
+}
+.slide-box.slide-registration {
+  background-color: #ffc80b;
+}
+.slide-box .btn {
+  text-transform: uppercase;
+}
+.slide-box .form {
+  color: #a0a3a8;
+  font-weight: normal;
+}
+.slide-box .form .control-label {
+  font-weight: normal;
+}
 .signup-form-canvas {
   margin: 0 auto;
   padding: 25px 40px;
@@ -5,39 +143,44 @@
   background-color: #fafbfd;
   border-radius: 3px;
 }
-body {
-  padding-top: 50px;
+.controll {
+  width: 66px;
+  height: 66px;
+  background: #46bbf0 none center no-repeat;
+  display: block;
+  border-radius: 50%;
 }
-.slide {
-  height: 640px;
-  color: #fff;
+.controll:hover {
+  background-color: #30b1ea;
 }
-.slide.slide-top {
-  background-color: #79d1f7;
-  background-image: url('../im/slide-top-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: 100%;
+.controll.mouse {
+  background-image: url("../im/ico-mouse.png");
 }
-.slide.slide-payments {
-  background: #fdaf1b;
+.controll.browse {
+  background-image: url("../im/ico-arrows.png");
 }
-.slide.slide-advantages {
-  background-color: #79d1f7;
+.controll.browse.left {
+  background-position: 0 0;
 }
-.slide.slide-registration {
-  background-color: #ffc80b;
+.controll.browse.right {
+  background-position: -66px 0;
 }
-.slide .btn {
-  text-transform: uppercase;
+.controll.browse.left {
+  left: 50%;
+  margin-left: -570px;
+  top: 50%;
+  margin-top: -66px;
 }
-.slide .form {
-  color: #a0a3a8;
-  font-weight: normal;
+.controll.browse.right {
+  right: 50%;
+  margin-right: -570px;
+  top: 50%;
+  margin-top: -66px;
 }
-.slide .form .control-label {
-  font-weight: normal;
-}
+/*.carousel-inner .container{
+    height: 400px;
+    background: #ff0000;
+}*/
 footer {
   padding: 65px 0;
   background-color: #f9f9fb;
