@@ -257,13 +257,8 @@ html.fp-enabled,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
     height: auto !important;
 }
-.navbar-default .navbar-nav > li > a {
-  text-transform: uppercase;
-  color: #30b1ea;
-}
 .slide-box {
   padding: 0;
-  min-height: 640px;
   color: #fff;
   position: relative;
 }
@@ -390,6 +385,19 @@ html.fp-enabled,
 }
 .slide-box .form .agreement {
   font-size: 13px;
+}
+.navbar-default .navbar-nav > li > a {
+  text-transform: uppercase;
+  color: #30b1ea;
+}
+.navbar-default .navbar-nav > li.active {
+  background: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background: transparent;
+  color: #ff0000;
 }
 .carousel-caption {
   bottom: 0;
