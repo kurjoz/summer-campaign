@@ -9,6 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <title>Portmone.com</title>
 
@@ -24,38 +25,8 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">
-                <img src="im/logo.png" alt="">
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#">Види платежів</a>
-                </li>
-                <li>
-                    <a href="#">Переваги</a>
-                </li>
-                <li>
-                    <a href="#">Реєстрація</a>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
-<div class="page-container">
-    <section class="slide-box slide-top">
+<div id="secSlider" class="page-container">
+    <section class="section slide-box slide-top" data-anchor="topSection">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -70,9 +41,9 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="controll mouse"></a>
+        <a href="#paySection" class="controll mouse"></a>
     </section>
-    <section class="slide-box slide-payments">
+    <section class="section slide-box slide-payments" data-anchor="paySection">
         <div class="container">
             <div class="row">
                 <div class="slide-header">
@@ -88,7 +59,7 @@
             </div>
         </div>
     </section>
-    <section class="slide-box slide-advantages">
+    <section class="section slide-box slide-advantages" data-anchor="advSection">
         <div id="carousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -161,7 +132,7 @@
             </div>
         </div>-->
     </section>
-    <section class="slide-box slide-registration">
+    <section class="section slide-box slide-registration" data-anchor="regSection">
         <div class="container">
             <div class="row">
                 <div class="slide-header">
@@ -214,38 +185,74 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="footer-links pull-right">
-                        <a href="https://www.portmone.com.ua/r3/uk/prices/">Тарифи</a>
-                        <a href="https://www.portmone.com.ua/r3/uk/contacts">Контакти</a>
-                        <a href="https://www.facebook.com/Portmone.com.ua/">
-                            <img src="im/ico-fb.png" alt="Facebook">
-                        </a>
-                        <a href="https://itunes.apple.com/ua/app/portmone/id587804458">
-                            <img src="im/ico-appstore.png" alt="Appstore">
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.portmone2.android">
-                            <img src="im/ico-gplay.png" alt="Google Play">
-                        </a>
-                    </div>
-                    <div class="footer-logo">
-                        <a href="#">
-                            <img src="im/logo.png" alt="" />
-                        </a>
-                    </div>
+</div>
+<nav style="position: fixed!important;" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img src="im/logo.png" alt="">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul id="sliderMenu" class="nav navbar-nav navbar-right">
+                <li data-menuanchor="paySection">
+                    <a href="#paySection">Види платежів</a>
+                </li>
+                <li data-menuanchor="advSection">
+                    <a href="#advSection">Переваги</a>
+                </li>
+                <li data-menuanchor="regSection">
+                    <a href="#regSection">Реєстрація</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-links pull-right">
+                    <a href="https://www.portmone.com.ua/r3/uk/prices/">Тарифи</a>
+                    <a href="https://www.portmone.com.ua/r3/uk/contacts">Контакти</a>
+                    <a href="https://www.facebook.com/Portmone.com.ua/">
+                        <img src="im/ico-fb.png" alt="Facebook">
+                    </a>
+                    <a href="https://itunes.apple.com/ua/app/portmone/id587804458">
+                        <img src="im/ico-appstore.png" alt="Appstore">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.portmone2.android">
+                        <img src="im/ico-gplay.png" alt="Google Play">
+                    </a>
+                </div>
+                <div class="footer-logo">
+                    <a href="#">
+                        <img src="im/logo.png" alt="" />
+                    </a>
                 </div>
             </div>
         </div>
-    </footer>
-</div>
+    </div>
+</footer>
 <!--scripts-->
 <script>
-    $('#carousel').carousel('pause');
+    $(document).ready(function() {
+        $('#secSlider').fullpage({
+            anchors:['topSection', 'paySection', 'advSection', 'regSection'],
+            menu: '#sliderMenu'
+        });
+
+        $('#carousel').carousel('pause');
+    });
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/app.js"></script>
 </body>
