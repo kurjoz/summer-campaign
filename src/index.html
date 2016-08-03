@@ -89,15 +89,36 @@
         </div>
     </section>
     <section class="slide-box slide-advantages">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1" class=""></li>
+                <li data-target="#carousel" data-slide-to="2" class=""></li>
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="carousel-caption-image">
+                                <img style="margin-left: -30px;" src="im/slide-advant-slide2-bg.jpg" alt="">
+                            </div>
+                            <div class="carousel-caption-text">
+                                <h2>швидко</h2>
+                                <p>сплачуйте рахунки <br>де б ви не були, <br>не витрачаючи час <br>на походи до банків <br>та очікування у черзі</p>
+                                <p class="download">
+                                    <a href="#">
+                                        <img src="im/ico-gplay.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="im/ico-appstore.png" alt="">
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
                     <div class="container">
                         <div class="carousel-caption">
                             <div class="carousel-caption-image">
@@ -107,19 +128,6 @@
                                 <h2>зручно</h2>
                                 <p>створюйте <br> шаблони платежів, <br>додавайте картки, <br>налаштовуйте <br>автоплатіж для
                                     <br>оплати у два кліки!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <div class="carousel-caption-image">
-                                <img src="im/slide-advant-slide2-bg.jpg" alt="">
-                            </div>
-                            <div style="text-align: left" class="carousel-caption-text">
-                                <h2>швидко</h2>
-                                <p>сплачуйте рахунки <br>де б ви не були, <br>не витрачаючи час <br>на походи до банків <br>та очікування у черзі</p>
                             </div>
                         </div>
                     </div>
@@ -139,9 +147,9 @@
                 </div>
             </div>
 
-            <a class="carousel-control controll browse left " href="#myCarousel" role="button" data-slide="prev">
+            <a class="carousel-control controll browse left " href="#carousel" role="button" data-slide="prev">
             </a>
-            <a class="right carousel-control controll browse right" href="#myCarousel" role="button" data-slide="next">
+            <a class="right carousel-control controll browse right" href="#carousel" role="button" data-slide="next">
             </a>
         </div>
         <!--<div class="container">
@@ -157,8 +165,8 @@
         <div class="container">
             <div class="row">
                 <div class="slide-header">
-                    <div class="slide-header-lvl1">Приєднуйтесь прямо зараз</div>
-                    <div class="slide-header-lvl2">Сплачуйте рахунки без комісії 2 місяці</div>
+                    <div class="slide-header-lvl1">приєднуйтесь прямо зараз</div>
+                    <div class="slide-header-lvl2">сплачуйте рахунки без комісії 2 місяці<sup>*</sup></div>
                 </div>
                 <form id="signup-form" class="form form-horizontal signup-form-canvas">
                         <div class="form-group">
@@ -168,21 +176,21 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="signup-phone" class="col-sm-3 control-label">Телефон</label>
-                            <div class="col-sm-9">
-                                <input type="tel" class="form-control" id="signup-phone" placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-group">
                             <label for="signup-login" class="col-sm-3 control-label">Логін</label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" id="signup-login" placeholder="">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="signup-pass" class="col-sm-3 control-label">Логін</label>
+                            <label for="signup-pass" class="col-sm-3 control-label">Пароль</label>
                             <div class="col-sm-9">
                                 <input type="password" class="form-control" id="signup-pass" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-passconf" class="col-sm-3 control-label">Пароль <br> ще раз</label>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="signup-passconf" placeholder="">
                             </div>
                         </div>
                         <div class="form-group">
@@ -201,7 +209,7 @@
                                 <button class="btn btn-default">Зареєструватися</button>
                             </div>
                         </div>
-                        <p class="form-disclaimer">*При реєстрації нового користувача в cистемі portmone.com сплата протягом перших 2 місяців рахунків за комунальні послуги, інтернет, телебачення та стаціонарний телефон відбувається без комісії (за виключенням переказів на довільні реквізити). Деталі на www.portmone.com.ua/r3/uk/prices.</p>
+                        <p class="form-disclaimer"><sup>*</sup>При реєстрації нового користувача в cистемі portmone.com сплата протягом перших 2 місяців рахунків за комунальні послуги, інтернет, телебачення та стаціонарний телефон відбувається без комісії (за виключенням переказів на довільні реквізити). Деталі на www.portmone.com.ua/r3/uk/prices.</p>
                 </form>
             </div>
         </div>
@@ -211,16 +219,16 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="footer-links pull-right">
-                        <a href="#">Тарифи</a>
-                        <a href="#">Контакти</a>
-                        <a href="#">
-                            <img src="im/ico-fb.png" alt="">
+                        <a href="https://www.portmone.com.ua/r3/uk/prices/">Тарифи</a>
+                        <a href="https://www.portmone.com.ua/r3/uk/contacts">Контакти</a>
+                        <a href="https://www.facebook.com/Portmone.com.ua/">
+                            <img src="im/ico-fb.png" alt="Facebook">
                         </a>
                         <a href="#">
-                            <img src="im/ico-appstore.png" alt="">
+                            <img src="im/ico-appstore.png" alt="Appstore">
                         </a>
                         <a href="#">
-                            <img src="im/ico-gplay.png" alt="">
+                            <img src="im/ico-gplay.png" alt="Google Play">
                         </a>
                     </div>
                     <div class="footer-logo">
@@ -234,6 +242,9 @@
     </footer>
 </div>
 <!--scripts-->
+<script>
+    $('#carousel').carousel('pause');
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/app.js"></script>
