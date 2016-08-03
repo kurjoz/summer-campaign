@@ -86,6 +86,7 @@ body{
     &.slide-advantages{
         padding: 0;
         background-color: @color-blue;
+        min-height: 768px;
 
         .carousel{
             height: 100%;
@@ -100,7 +101,21 @@ body{
         }
     }
     &.slide-registration{
+        padding-bottom: 70px;
         background-color: @color-yellow;
+        height: auto;
+        background-image: url("../im/slide-registration-bg.png");
+        background-repeat: no-repeat;
+        background-position:  70% center;
+        .slide-header{
+            text-align: center;
+        }
+        .slide-header-lvl1{
+            font-size: 50px;
+        }
+        .slide-header-lvl2{
+            font-size: 27px;
+        }
     }
     .btn{
         text-transform: uppercase;
@@ -108,9 +123,28 @@ body{
     .form{
         color: #a0a3a8;
         font-weight: normal;
+        a{
+            color: #406e9c;
+            text-decoration: underline;
+        }
+        .control-label{
+            font-size: 15px;
+        }
+        .btn{
+            font-size: 18px;
+        }
+        .form-disclaimer{
+            margin: 20px 0 0 0;
+            font-size: 11px;
+            color: #9fa3a7;
+        }
 
         .control-label{
             font-weight: normal;
+            text-align: left;
+        }
+        .agreement{
+            font-size: 13px;
         }
     }
 
