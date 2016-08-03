@@ -113,6 +113,7 @@ body {
 .slide-box.slide-advantages {
   padding: 0;
   background-color: #79d1f7;
+  min-height: 768px;
 }
 .slide-box.slide-advantages .carousel {
   height: 100%;
@@ -124,7 +125,21 @@ body {
   height: 100%;
 }
 .slide-box.slide-registration {
+  padding-bottom: 70px;
   background-color: #ffc80b;
+  height: auto;
+  background-image: url("../im/slide-registration-bg.png");
+  background-repeat: no-repeat;
+  background-position: 70% center;
+}
+.slide-box.slide-registration .slide-header {
+  text-align: center;
+}
+.slide-box.slide-registration .slide-header-lvl1 {
+  font-size: 50px;
+}
+.slide-box.slide-registration .slide-header-lvl2 {
+  font-size: 27px;
 }
 .slide-box .btn {
   text-transform: uppercase;
@@ -133,12 +148,66 @@ body {
   color: #a0a3a8;
   font-weight: normal;
 }
+.slide-box .form a {
+  color: #406e9c;
+  text-decoration: underline;
+}
+.slide-box .form .control-label {
+  font-size: 15px;
+}
+.slide-box .form .btn {
+  font-size: 18px;
+}
+.slide-box .form .form-disclaimer {
+  margin: 20px 0 0 0;
+  font-size: 11px;
+  color: #9fa3a7;
+}
 .slide-box .form .control-label {
   font-weight: normal;
+  text-align: left;
+}
+.slide-box .form .agreement {
+  font-size: 13px;
+}
+.carousel-caption {
+  bottom: 0;
+  height: 100%;
+  text-shadow: none;
+  text-align: left;
+}
+.carousel-caption .carousel-caption-image {
+  float: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  text-align: center;
+}
+.carousel-caption .carousel-caption-text {
+  margin-left: 50%;
+  padding: 240px 15px 0 30px;
+  width: 50%;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+.carousel-caption .carousel-caption-text > h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 64px;
+  color: #ff0000;
+  font-weight: 600;
+}
+.carousel-caption .carousel-caption-text p {
+  font-size: 32px;
+  line-height: 1.5;
+  font-weight: 600;
 }
 .signup-form-canvas {
   margin: 0 auto;
-  padding: 25px 40px;
+  padding: 25px 60px;
   max-width: 600px;
   background-color: #fafbfd;
   border-radius: 3px;
@@ -169,18 +238,14 @@ body {
   left: 50%;
   margin-left: -570px;
   top: 50%;
-  margin-top: -66px;
+  margin-top: -33px;
 }
 .controll.browse.right {
   right: 50%;
   margin-right: -570px;
   top: 50%;
-  margin-top: -66px;
+  margin-top: -33px;
 }
-/*.carousel-inner .container{
-    height: 400px;
-    background: #ff0000;
-}*/
 footer {
   padding: 65px 0;
   background-color: #f9f9fb;
