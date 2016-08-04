@@ -1,0 +1,77 @@
+.stickers{
+    height: 250px;
+    width: 823px;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+
+    .sticker{
+        display: inline-block;
+        position: relative;
+        transition: transform .15s linear;
+        &::before{
+            opacity: .75;
+            transition: opacity .15s linear;
+            z-index: -1;
+
+        }
+        &.sticker-1{
+            z-index: 5;
+            &:before{
+                content: '';
+                position: absolute;
+                top: -2px;
+                left: -52px;
+                //border: 1px solid red;
+                background: transparent url("../im/sticker1-shadow.png") 0 0 no-repeat;
+
+                width: 254px;
+                height: 233px;
+            }
+        }
+        &.sticker-2{
+            left: -15px;
+            top: -5px;
+            z-index: 6;
+            &:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -4px;
+                //border: 1px solid red;
+                background: transparent url("../im/sticker2-shadow.png") 0 0 no-repeat;
+                width: 215px;
+                height: 214px;
+            }
+
+        }
+        &.sticker-3{
+            left: -50px;
+            top: 5px;
+            z-index: 7;
+        }
+        &.sticker-4{
+            left: -69px;
+            top: -5px;
+            z-index: 6;
+            &:before{
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: -1px;
+                //border: 1px solid red;
+                background: transparent url("../im/sticker4-shadow.png") 0 0 no-repeat;
+                width: 147px;
+                height: 146px;
+            }
+        }
+
+        &:hover{
+            cursor: pointer;
+            transform: rotateX(-12deg);
+            &::before{
+                opacity: 1;
+            }
+        }
+    }
+}
