@@ -261,6 +261,7 @@ html.fp-enabled,
   padding: 0;
   color: #fff;
   position: relative;
+  overflow: hidden;
 }
 .slide-box .slide-header {
   margin: 0 0 40px;
@@ -290,13 +291,13 @@ html.fp-enabled,
   margin-left: -33px;
 }
 .slide-box.slide-top:before {
-  width: 1140px;
+  width: 1170px;
   height: 509px;
   content: '';
   position: absolute;
   bottom: 0;
   left: 50%;
-  margin-left: -570px;
+  margin-left: -585px;
   background-image: url('../im/slide-top-bg.jpg');
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -356,6 +357,9 @@ html.fp-enabled,
 .slide-box.slide-registration .slide-header-lvl2 {
   font-size: 27px;
 }
+.navbar {
+  opacity: .95;
+}
 .navbar-default .navbar-nav > li > a {
   text-transform: uppercase;
   font-weight: bold;
@@ -398,49 +402,72 @@ html.fp-enabled,
 .form .agreement {
   font-size: 13px;
 }
-.carousel-caption {
-  bottom: 0;
-  height: 100%;
-  text-shadow: none;
-  text-align: left;
+.carousel-caption-image {
+  position: relative;
 }
-.carousel-caption .carousel-caption-image {
-  float: left;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  text-align: center;
-}
-.carousel-caption .carousel-caption-image > img {
-  display: block;
+.carousel-caption-image > img {
+  z-index: 2;
+  position: relative;
+  display: inline-block;
   max-width: 100%;
 }
-.carousel-caption .carousel-caption-text {
-  margin-left: 50%;
-  padding: 240px 15px 0 30px;
-  width: 50%;
+.carousel-caption-image.im-freesbee:before {
+  margin: 50px 0 0 0;
+  content: '';
   position: absolute;
-  height: 100%;
-  right: 0;
-  top: 0;
+  width: 208px;
+  height: 372px;
+  top: 100%;
+  left: 125px;
+  background: transparent url("../im/slide-advant-slide2-bg-extra.png") 0 0;
 }
-.carousel-caption .carousel-caption-text > h2 {
+.carousel-caption-image.im-chair {
+  text-align: right;
+}
+.carousel-caption-image.im-chair:before {
+  margin: 0;
+  content: '';
+  position: absolute;
+  width: 185px;
+  height: 575px;
+  top: 50%;
+  right: 33%;
+  background: transparent url("../im/slide-advant-slide1-bg-extra.png") 0 0;
+  z-index: 1;
+}
+.carousel-caption-image.im-umbrella {
+  text-align: right;
+}
+.carousel-caption-image.im-umbrella:before {
+  margin: 0;
+  content: '';
+  position: absolute;
+  width: 185px;
+  height: 575px;
+  top: 55%;
+  left: 25%;
+  background: transparent url("../im/slide-advant-slide1-bg-extra.png") 0 0;
+  z-index: 10;
+}
+.carousel-caption-text {
+  padding-left: 15%;
+}
+.carousel-caption-text > h2 {
   margin: 0;
   padding: 0;
   font-size: 64px;
   color: #ff0000;
   font-weight: 600;
 }
-.carousel-caption .carousel-caption-text p {
+.carousel-caption-text p {
   font-size: 32px;
   line-height: 1.5;
   font-weight: 600;
 }
-.carousel-caption .carousel-caption-text .download {
+.carousel-caption-text .download {
   margin-top: 30px;
 }
-.carousel-caption .carousel-caption-text .download > a {
+.carousel-caption-text .download > a {
   margin-right: 15px;
 }
 .signup-form-canvas {
@@ -474,15 +501,53 @@ html.fp-enabled,
 }
 .controll.browse.left {
   left: 50%;
-  margin-left: -570px;
+  margin-left: -585px;
   top: 50%;
   margin-top: -33px;
 }
 .controll.browse.right {
   right: 50%;
-  margin-right: -570px;
+  margin-right: -585px;
   top: 50%;
   margin-top: -33px;
+  background-position: -66px 0;
+}
+.fp-controlArrow {
+  border-width: 0 !important;
+  width: 66px !important;
+  height: 66px !important;
+  background: #46bbf0 none center no-repeat;
+  display: block;
+  border-radius: 50%;
+  background-image: url("../im/ico-arrows.png");
+}
+.fp-controlArrow.fp-prev {
+  background-position: 0 0;
+  left: 50%;
+  margin-left: -585px;
+  top: 50%;
+  margin-top: -33px;
+}
+.fp-controlArrow.fp-next {
+  right: 50%;
+  margin-right: -585px;
+  top: 50%;
+  margin-top: -33px;
+  background-position: -66px 0;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #45bbef;
+  height: 14px;
+  width: 14px;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  background: #fff;
+  height: 22px;
+  width: 22px;
 }
 .stickers {
   height: 250px;
@@ -548,7 +613,7 @@ html.fp-enabled,
 }
 .stickers .sticker:hover {
   cursor: pointer;
-  transform: rotate(5deg);
+  transform: rotate(5deg) rotateX(-5deg);
 }
 .stickers .sticker:hover::before {
   opacity: 1;

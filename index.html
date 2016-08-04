@@ -71,64 +71,55 @@
         </div>
     </section>
     <section class="section slide-box slide-advantages" data-anchor="advSection">
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1" class=""></li>
-                <li data-target="#carousel" data-slide-to="2" class=""></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <div class="carousel-caption-image">
-                                <img style="margin-left: -30px;" src="im/slide-advant-slide2-bg.jpg" alt="">
-                            </div>
-                            <div class="carousel-caption-text">
-                                <h2>швидко</h2>
-                                <p>сплачуйте рахунки <br>де б ви не були, <br>не витрачаючи час <br>на походи до банків <br>та очікування у черзі</p>
-                                <p class="download">
-                                    <a href="#"><img height="40" src="im/ico-gplay.svg" alt=""></a>
-                                    <a href="#"><img height="40" src="im/ico-appstore.svg" ></a>
-                                </p>
-                            </div>
-                        </div>
+        <div class="slide">
+            <div class="container">
+                <div class="col-md-6">
+                    <div class="carousel-caption-image im-freesbee">
+                        <img src="im/slide-advant-slide2-bg.jpg" alt="">
                     </div>
                 </div>
-                <div class="item">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <div class="carousel-caption-image">
-                                <img src="im/slide-advant-slide1-bg.jpg" alt="">
-                            </div>
-                            <div class="carousel-caption-text">
-                                <h2>зручно</h2>
-                                <p>створюйте <br> шаблони платежів, <br>додавайте картки, <br>налаштовуйте <br>автоплатіж для
-                                    <br>оплати у два кліки!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <div class="carousel-caption-image">
-                                <img src="im/slide-advant-slide3-bg.jpg" alt="">
-                            </div>
-                            <div class="carousel-caption-text">
-                                <h2>надійно</h2>
-                                <p>приєднуйтеся <br>до нас. нам довірять <br>свої рахунки понад<br> 1 млн користувачів<br> щомісяця</p>
-                            </div>
-                        </div>
+                <div class="col-md-6">
+                    <div class="carousel-caption-text">
+                        <h2>швидко</h2>
+                        <p>сплачуйте рахунки <br>де б ви не були, <br>не витрачаючи час <br>на походи до банків <br>та очікування у черзі</p>
+                        <p class="download">
+                            <a href="#"><img height="40" src="im/ico-gplay.svg" alt=""></a>
+                            <a href="#"><img height="40" src="im/ico-appstore.svg" ></a>
+                        </p>
                     </div>
                 </div>
             </div>
-
-            <a class="carousel-control controll browse left " href="#carousel" role="button" data-slide="prev">
-            </a>
-            <a class="right carousel-control controll browse right" href="#carousel" role="button" data-slide="next">
-            </a>
+        </div>
+        <div class="slide">
+            <div class="container">
+                <div class="col-md-6">
+                    <div class="carousel-caption-image im-chair">
+                        <img src="im/slide-advant-slide1-bg.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="carousel-caption-text">
+                        <h2>зручно</h2>
+                        <p>створюйте <br> шаблони платежів, <br>додавайте картки, <br>налаштовуйте <br>автоплатіж для
+                            <br>оплати у два кліки!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="container">
+                <div class="col-md-6">
+                    <div class="carousel-caption-image im-umbrella">
+                        <img src="im/slide-advant-slide3-bg.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="carousel-caption-text">
+                        <h2>надійно</h2>
+                        <p>приєднуйтеся <br>до нас. нам довірять <br>свої рахунки понад<br> 1 млн користувачів<br> щомісяця</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="section slide-box slide-registration" data-anchor="regSection">
@@ -245,6 +236,8 @@
         $('#secSlider').fullpage({
             anchors:['topSection', 'paySection', 'advSection', 'regSection'],
             menu: '#sliderMenu',
+            autoScrolling: true,
+            slidesNavigation: true,
             responsiveWidth: 768
         });
 
