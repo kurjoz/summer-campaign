@@ -25,6 +25,36 @@
 </head>
 
 <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#topSection">
+                <img src="im/logo.png" alt="">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul id="sliderMenu" class="nav navbar-nav navbar-right">
+                <li data-menuanchor="paySection">
+                    <a href="#paySection">Види платежів</a>
+                </li>
+                <li data-menuanchor="advSection">
+                    <a href="#advSection">Переваги</a>
+                </li>
+                <li data-menuanchor="regSection">
+                    <a href="#regSection">Реєстрація</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
 <div id="secSlider" class="page-container">
     <section class="section slide-box slide-top" data-anchor="topSection">
         <div class="container">
@@ -34,7 +64,7 @@
                         <div class="slide-header-lvl3">вирушайте у відпустку</div>
                         <div class="slide-header-lvl1">
                             а рахунки <br>довірте <br>
-                            <img src="im/logo-lg.png" alt="portmone.com" />
+                            <img class="logotext" src="im/logo-lg.png" alt="portmone.com" />
                         </div>
                     </div>
                     <a href="https://www.portmone.com.ua/r3/uk/" class="btn btn-default">сплатити</a>
@@ -73,12 +103,12 @@
     <section class="section slide-box slide-advantages" data-anchor="advSection">
         <div class="slide">
             <div class="container">
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6 col-xs-6">
                     <div class="carousel-caption-image im-freesbee">
                         <img src="im/slide-advant-slide2-bg.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6 col-xs-6">
                     <div class="carousel-caption-text">
                         <h2>швидко</h2>
                         <p>сплачуйте рахунки <br>де б ви не були, <br>не витрачаючи час <br>на походи до банків <br>та очікування у черзі</p>
@@ -175,7 +205,7 @@
             </div>
         </div>
     </section>
-    <div class="section section fp-auto-height">
+    <section class="section fp-auto-height">
         <footer>
             <div class="container">
                 <div class="row">
@@ -198,38 +228,8 @@
                 </div>
             </div>
         </footer>
-    </div>
+    </section>
 </div>
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#topSection">
-                <img src="im/logo.png" alt="">
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul id="sliderMenu" class="nav navbar-nav navbar-right">
-                <li data-menuanchor="paySection">
-                    <a href="#paySection">Види платежів</a>
-                </li>
-                <li data-menuanchor="advSection">
-                    <a href="#advSection">Переваги</a>
-                </li>
-                <li data-menuanchor="regSection">
-                    <a href="#regSection">Реєстрація</a>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
 <!--scripts-->
 <script>
     $(document).ready(function() {
