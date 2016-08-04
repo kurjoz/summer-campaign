@@ -416,7 +416,7 @@ html.fp-enabled,
   content: '';
   position: absolute;
   width: 208px;
-  height: 372px;
+  height: 550px;
   top: 100%;
   left: 125px;
   background: transparent url("../im/slide-advant-slide2-bg-extra.png") 0 0;
@@ -544,10 +544,16 @@ html.fp-enabled,
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li:hover a.active span {
+.fp-slidesNav ul li:hover a.active span,
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
   background: #fff;
   height: 22px;
   width: 22px;
+}
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+  background-color: #30b1ea;
 }
 .stickers {
   height: 250px;
