@@ -1,0 +1,84 @@
+@media (max-width: @screen-xs-max) {
+    body{
+        //border: 1px solid red;
+    }
+    .fp-tableCell,
+    .fp-section.fp-table,
+    .fp-slide.fp-table{
+        height: auto!important;
+    }
+    .slide-box{
+        padding: 80px 10px;
+        min-height: 580px;
+    }
+
+    .slide-box .slide-header .slide-header-lvl1{
+        font-size: 48px;
+        small{
+            font-size: 42px;
+        }
+        .logotext{
+            margin: 12px 0;
+            width: 306px;
+        }
+    }
+    .slide-box .slide-header .slide-header-lvl2{}
+    .slide-box .slide-header .slide-header-lvl3{
+        font-size: 26px;
+    }
+
+    //Top Slide.
+    .slide-box.slide-top:before{
+        width: 50%;
+        max-width: 300px;
+        height: 100%;
+        left: auto;
+        right: 0;
+        bottom: 0;
+        background-size: 100% auto;
+    }
+
+    //Payments Slide.
+    .slide-box.slide-payments{
+        padding-top: 30px;
+        height: 580px!important;
+        min-height: 580px;
+        .slide-header{
+            line-height: 48px;
+        }
+        .slide-header .slide-header-lvl1{
+            font-size: 60px;
+        }
+        .stickers{
+            //opacity: .5;
+        }
+    }
+    .slide-box.slide-payments:before{
+        height: 250px;
+        background-size: auto 100%;
+    }
+    .slide-box.slide-payments:after {
+        width: 186px;
+        height: 100%;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: url('../im/slide-payments-mobile-bot-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        z-index: 1;
+    }
+    .slide-box.slide-payments:after{}
+
+    //Carousel.
+    .carousel-caption-text > h2{
+        font-size: 42px;
+    }
+    .carousel-caption-text > p{
+        font-size: 20px;
+    }
+
+
+
+}

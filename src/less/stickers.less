@@ -1,14 +1,28 @@
 .stickers{
-    height: 250px;
-    width: 823px;
+    height: auto;
+    max-width: 823px;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
     white-space: nowrap;
+    //border: 1px solid green;
+    position: relative;
+    z-index: 10;
 
     .sticker{
-        display: inline-block;
+        display: block;
+        float: left;
         position: relative;
         transition: transform .15s linear;
+        //border: 1px solid green;
+        height: auto;
+        box-sizing: border-box;
+
+        >img{
+            display: block;
+            width: 100%;
+
+        }
         &::before{
             opacity: .75;
             transition: opacity .15s linear;
@@ -17,7 +31,10 @@
         }
         &.sticker-1{
             z-index: 5;
-            &:before{
+            width: 27.3390036452%;  //225px original
+            //border: 1px solid red;
+
+            /*&:before{
                 content: '';
                 position: absolute;
                 top: -2px;
@@ -27,13 +44,13 @@
 
                 width: 254px;
                 height: 233px;
-            }
+            }*/
         }
         &.sticker-2{
-            left: -15px;
-            top: -5px;
-            z-index: 6;
-            &:before{
+            width: 25.39489671932%; //209px
+            margin-left: -1.3365735115%;
+            margin-top: 9px;
+            /*&:before{
                 content: '';
                 position: absolute;
                 top: 0;
@@ -42,19 +59,22 @@
                 background: transparent url("../im/sticker2-shadow.png") 0 0 no-repeat;
                 width: 215px;
                 height: 214px;
-            }
+            }*/
 
         }
         &.sticker-3{
-            left: -50px;
-            top: 5px;
+            margin-left: -3.5236938032%;
+            margin-top: 0;
             z-index: 7;
+
+            width: 28.79708384%; //237px;
         }
         &.sticker-4{
-            left: -69px;
-            top: -5px;
+            width: 25.39489671932%; //209px
+            margin-left: -2.4656136087%;
+            margin-top: 9px;
             z-index: 6;
-            &:before{
+            /*&:before{
                 content: '';
                 position: absolute;
                 bottom: -2px;
@@ -63,7 +83,7 @@
                 background: transparent url("../im/sticker4-shadow.png") 0 0 no-repeat;
                 width: 147px;
                 height: 146px;
-            }
+            }*/
         }
 
         &:hover{
