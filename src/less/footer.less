@@ -2,13 +2,28 @@ footer{
     padding: 65px 0;
     background-color: #f9f9fb;
 
+    .footer-logo{
+        padding-top: 6px;
+    }
+
     .footer-links{
         > a{
             margin: 0 0 0 20px;
+            padding: 4px 0 0 0;
             float: left;
             text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
             color: #adadad;
             line-height: 34px;
+            >img{
+                position: relative;
+                top: -4px;
+            }
+
+            &:hover{
+                color: @color-nav-link-active
+            }
         }
     }
 }
