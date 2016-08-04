@@ -341,7 +341,6 @@ html.fp-enabled,
   height: 100%;
 }
 .slide-box.slide-registration {
-  padding-bottom: 70px;
   background-color: #ffc80b;
   height: auto;
   background-image: url("../im/slide-registration-bg.png");
@@ -357,47 +356,47 @@ html.fp-enabled,
 .slide-box.slide-registration .slide-header-lvl2 {
   font-size: 27px;
 }
-.slide-box .btn {
-  text-transform: uppercase;
-}
-.slide-box .form {
-  color: #a0a3a8;
-  font-weight: normal;
-}
-.slide-box .form a {
-  color: #406e9c;
-  text-decoration: underline;
-}
-.slide-box .form .control-label {
-  font-size: 15px;
-}
-.slide-box .form .btn {
-  font-size: 18px;
-}
-.slide-box .form .form-disclaimer {
-  margin: 20px 0 0 0;
-  font-size: 11px;
-  color: #9fa3a7;
-}
-.slide-box .form .control-label {
-  font-weight: normal;
-  text-align: left;
-}
-.slide-box .form .agreement {
-  font-size: 13px;
-}
 .navbar-default .navbar-nav > li > a {
   text-transform: uppercase;
+  font-weight: bold;
   color: #30b1ea;
 }
 .navbar-default .navbar-nav > li.active {
   background: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > :hover > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   background: transparent;
   color: #ff0000;
+}
+.form {
+  color: #9fa3a7;
+  font-weight: normal;
+}
+.form a {
+  color: #406e9c;
+  text-decoration: underline;
+}
+.form .control-label {
+  font-size: 15px;
+}
+.form .btn {
+  font-size: 18px;
+}
+.form .form-disclaimer {
+  margin: 20px 0 0 0;
+  font-size: 11px;
+}
+.form .control-label {
+  padding-top: 0;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: left;
+}
+.form .agreement {
+  font-size: 13px;
 }
 .carousel-caption {
   bottom: 0;
@@ -489,11 +488,24 @@ footer {
   padding: 65px 0;
   background-color: #f9f9fb;
 }
+footer .footer-logo {
+  padding-top: 6px;
+}
 footer .footer-links > a {
   margin: 0 0 0 20px;
+  padding: 4px 0 0 0;
   float: left;
   text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
   color: #adadad;
   line-height: 34px;
+}
+footer .footer-links > a > img {
+  position: relative;
+  top: -4px;
+}
+footer .footer-links > a:hover {
+  color: #ff0000;
 }
 /*# sourceMappingURL=main.css.map */
