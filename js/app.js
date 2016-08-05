@@ -4513,7 +4513,6 @@ $(document).ready(function() {
     });
 });
 
-
 // jQuery validation and rules;
 $(document).ready(function(){
     $('#signup-form').validate({
