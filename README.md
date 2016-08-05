@@ -8,12 +8,13 @@ requirements:
 - grunt
 
 to install dependencies, run:
-
+<pre> 
 <code>
-    npm install
-    <br/>
-    bower install
+    npm install;
+    bower install;
+    
 </code>
+</pre>
 
 Then run grunt to compile files and local server, run:
 
