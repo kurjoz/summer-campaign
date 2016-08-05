@@ -1,6 +1,11 @@
+
 @media (max-width: @screen-xs-max) {
-    body{
-        //border: 1px solid red;
+    .btn,
+    .form .btn{
+        font-size: 16px;
+    }
+    .slide-box .slide-header{
+        margin-bottom: 25px;
     }
     .fp-tableCell,
     .fp-section.fp-table,
@@ -40,7 +45,7 @@
 
     //Payments Slide.
     .slide-box.slide-payments{
-        padding-top: 30px;
+        padding-top: 60px;
         height: 580px!important;
         min-height: 580px;
         .slide-header{
@@ -54,11 +59,13 @@
         }
     }
     .slide-box.slide-payments:before{
-        height: 250px;
+        max-height: 250px;
+        height: 43%;
         background-size: auto 100%;
     }
     .slide-box.slide-payments:after {
-        width: 186px;
+        max-width: 186px;
+        width: 40%;
         height: 100%;
         content: '';
         position: absolute;
@@ -67,18 +74,244 @@
         background-image: url('../im/slide-payments-mobile-bot-bg.jpg');
         background-repeat: no-repeat;
         background-position: left bottom;
+        background-size: 100% auto;
         z-index: 1;
     }
-    .slide-box.slide-payments:after{}
 
     //Carousel.
-    .carousel-caption-text > h2{
-        font-size: 42px;
+    .slide-box.slide-advantages{
+        padding: 0 30px;
+        height: 480px!important;
+        min-height: 0;
+        .fp-tableCell, .fp-section.fp-table, .fp-slide.fp-table{
+            height: 100%!important;
+        }
+        .carousel-caption-image{
+            text-align: left;
+            >img{
+                max-width: 95%;
+            }
+        }
+        .carousel-caption-image.im-freesbee:before {
+            width: 50%;
+            height: 550px;
+            top: 100%;
+            left: 20%;
+            margin-left: 0;
+            background-size: 100% auto;
+        }
+        .carousel-caption-image.im-chair:before {
+            width: 50%;
+            right: auto;
+            left: 0;
+            background-size: 100% auto;
+        }
+        .carousel-caption-image.im-umbrella:before {
+            width: 50%;
+            left: 0;
+            background-size: 100% auto;
+        }
+        .carousel-caption-text{
+            padding-left: 0;
+        }
+        .carousel-caption-text .download{
+            > a{
+                margin: 0;
+                > img{
+                    height: 32px;
+                }
+            }
+        }
+        .carousel-caption-text > h2{
+            margin: 0 0 5px;
+            font-size: 42px;
+            line-height: 1.25;
+        }
+        .carousel-caption-text > p{
+            font-size: 20px;
+            line-height: 1.3785;
+        }
     }
-    .carousel-caption-text > p{
-        font-size: 20px;
+
+    //Slider Controls
+    .fp-controlArrow{
+        width: 40px!important;
+        height: 40px!important;
+        background-size: auto 100%;
+
+    }
+    .fp-controlArrow.fp-prev{
+        left: 10px;
+        margin-left: 0;
+    }
+    .fp-controlArrow.fp-next{
+        right: 10px;
+        margin-right: 0;
+        background-position: -40px 0;
     }
 
+    //Slide Registration:
+    .slide-box.slide-registration{
+        padding-right: 25px;
+        padding-left: 25px;
+        .slide-header-lvl1{
+            margin-bottom: 5px;
+            font-size: 30px;
+        }
+        .slide-header-lvl2{
+            font-size: 16px;
+        }
+    }
 
+    //Signup form
 
+    .signup-form-canvas {
+        margin: 0 auto;
+        padding: 20px 40px;
+        max-width: 450px;
+        background-color: #fafbfd;
+        border-radius: 3px;
+    }
+    .form .control-label br{
+        display: none;
+    }
+    .form .form-group._submit{
+        text-align: center;
+    }
+
+//Footer
+    footer{
+        padding: 30px 0;
+    }
+    footer .footer-links {
+        float: none!important;
+        text-align: center;
+         > a{
+            margin: 0 10px;
+            float: none;
+        }
+    }
+
+    footer .footer-logo{
+        padding-top: 30px;
+        display: block;
+        text-align: center;
+        clear: both;
+    }
+
+}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+    /*body{
+        border: 1px solid green;
+    }*/
+    //Slides general
+    .slide-box{
+        padding: 0 20px;
+    }
+    //Top Slide
+    .slide-box.slide-top{
+        /*padding-top: 0px;
+        padding-bottom: 100px;*/
+        .fp-tableCell{
+            vertical-align: top;
+        }
+        .slide-header{
+            padding-top: 100px;
+        }
+    }
+    .slide-box.slide-top:before{
+        margin: 0;
+        left: 20px;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        background-size: auto 100%;
+    }
+    //Payments Slide:
+    .slide-box.slide-payments:before{
+        height: 38%;
+        background-size: auto 100%;
+    }
+    .slide-box.slide-payments:after{
+        height: 38%;
+        background-size: auto 100%;
+    }
+    //Carousel.
+    .slide-box.slide-advantages{
+        .carousel-caption-image{
+            >img{
+                max-width: 92%;
+            }
+        }
+        .carousel-caption-image.im-freesbee:before {
+            width: 40%;
+            top: 100%;
+            left: 40%;
+            margin-left: 0;
+            background-size: 100% auto;
+        }
+        .carousel-caption-image.im-chair:before {
+            width: 40%;
+            right: auto;
+            left: 10%;
+            background-size: 100% auto;
+        }
+        .carousel-caption-image.im-umbrella:before {
+            width: 40%;
+            left: 15%;
+            background-size: 100% auto;
+        }
+        .carousel-caption-text{
+            padding-left: 15px;
+        }
+        .carousel-caption-text .download{
+            > a{
+                margin: 0;
+                > img{
+                    height: 35px;
+                }
+            }
+        }
+        .carousel-caption-text > h2{
+            margin: 0 0 5px;
+            //font-size: 42px;
+            line-height: 1.25;
+        }
+        .carousel-caption-text > p{
+            font-size: 24px;
+            line-height: 1.3785;
+        }
+    }
+
+    //Slider Controls
+    .fp-controlArrow{
+        width: 50px!important;
+        height: 50px!important;
+        background-size: auto 100%;
+
+    }
+
+    .fp-controlArrow.fp-prev{
+        left: 10px;
+        margin-left: 0;
+    }
+    .fp-controlArrow.fp-next{
+        right: 10px;
+        margin-right: 0;
+        background-position: -50px 0;
+    }
+    footer .footer-logo{
+        top: 5px;
+        width: 180px;
+        position: relative;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    footer .footer-links > a > img{
+        height: 32px;
+    }
 }
