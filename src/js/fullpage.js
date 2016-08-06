@@ -6,6 +6,6 @@ $(document).ready(function() {
         autoScrolling: true,
         slidesNavigation: true,
         responsiveWidth: 768,
-        scrollBar: true
+        scrollBar: false
     });
 });
