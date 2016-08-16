@@ -7393,7 +7393,7 @@ html.fp-enabled,
 }
 .stickers .sticker:hover {
   cursor: pointer;
-  transform: rotate(3deg) rotateX(-5deg);
+  transform: rotate(10deg) rotateX(-5deg);
 }
 .stickers .sticker:hover::before {
   opacity: 1;
